@@ -1,8 +1,21 @@
+body{
+    margin: 0;
+}
+
+.gallery-main-wrapper{
+    width: calc(100% - 24px);
+    margin: 12px;
+    position: absolute;
+}
+
 #header{
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    margin: 12px 0
+    padding: 0 0 12px;
+    position:sticky;
+    top: 12px;
+    z-index: 3;
 }
 
 #header h1{
@@ -89,7 +102,12 @@
      50%,100%{transform:rotate(1turn)}
   } */
 
+#loader{
+    display: none;
+}
+
 .show-loader{
+    display:  block !important;
     width: 100px;
     height: 100px;
     border: 10px solid #f3f3f3;
@@ -97,6 +115,7 @@
     border-radius: 100%;
     margin: auto;
     animation: spin 1s infinite linear;
+    margin-top: 20vh;
     
 }
 
