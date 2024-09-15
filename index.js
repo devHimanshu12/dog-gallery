@@ -63,6 +63,7 @@ function createSearchInput(){
   let searchElem = document.createElement('input')
   searchElem.value = ''
   searchElem.type = 'text'
+  searchElem.placeholder = 'type breed name'
   headerElem.appendChild(searchElem)
   searchElem.addEventListener('input',handleSearchInput)
 
